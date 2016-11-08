@@ -1,0 +1,19 @@
+1. Let the program be used as the following:
+
+./blackjack [ -s ] [ -n <number of decks> ] <number of cards in hand>
+
+You will need to use `optind` to get <number of cards in hand>.  Read the getopt manpage.
+
+
+2. Create a function:
+
+	void hand_add(card struct **hand, card struct *c);
+
+Which will add a card to the hand.
+
+
+3. Create a function:
+
+	int dealer(struct deck *d);
+
+Which will simulate a dealer.  They start with two cards, and then draw until they have 17 or more points, at which poin they stop.  The function should return the total score of the dealer.
